@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hello from Blue Forest</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%237fb8d9'/%3E%3Cpath d='M16 5.5 21 12h-2.6l3.9 5.2h-3.2l3.5 4.8H9.4l3.5-4.8H9.7l3.9-5.2H11z' fill='%2312324f'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -16,6 +17,7 @@
       --mist: #e8f1f6;
       --pine: #1d4d3f;
       --moss: #3f7d5f;
+      --leaf: #8fd0b0;
       --text: #f4f8fb;
       --muted: #b7cad8;
     }
@@ -97,7 +99,7 @@
     }
 
     h1 span {
-      background: linear-gradient(90deg, var(--sky), #a8d8c0);
+      background: linear-gradient(90deg, var(--sky), var(--leaf));
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -174,10 +176,10 @@
 
   <header>
     <a class="logo" href="#">
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <circle cx="16" cy="16" r="16" fill="#7fb8d9"/>
-        <path d="M16 6 L23 17 H19 L24 24 H8 L13 17 H9 Z" fill="#12324f"/>
-        <rect x="14.5" y="24" width="3" height="3" fill="#12324f"/>
+      <svg viewBox="0 0 32 32" aria-hidden="true" shape-rendering="geometricPrecision">
+        <circle cx="16" cy="16" r="15" fill="var(--sky)"/>
+        <path d="M16 5.5 21 12h-2.6l3.9 5.2h-3.2l3.5 4.8H9.4l3.5-4.8H9.7l3.9-5.2H11z" fill="var(--deep)"/>
+        <rect x="14.6" y="22" width="2.8" height="3.8" rx=".6" fill="var(--deep)"/>
       </svg>
       Blue Forest
     </a>
@@ -201,11 +203,11 @@
   <div class="forest" aria-hidden="true">
     <svg viewBox="0 0 1440 260" preserveAspectRatio="none">
       <!-- back row -->
-      <path fill="#163d55" d="M0 260 V150 L40 90 L80 150 L120 70 L160 150 L210 100 L250 150 L300 60 L350 150 L400 95 L440 150 L500 75 L550 150 L600 100 L640 150 L700 65 L760 150 L800 105 L840 150 L900 80 L960 150 L1000 95 L1040 150 L1100 70 L1160 150 L1200 100 L1240 150 L1300 75 L1360 150 L1400 105 L1440 150 V260 Z"/>
+      <path fill="var(--blue)" fill-opacity=".55" d="M0 260 V150 L40 90 L80 150 L120 70 L160 150 L210 100 L250 150 L300 60 L350 150 L400 95 L440 150 L500 75 L550 150 L600 100 L640 150 L700 65 L760 150 L800 105 L840 150 L900 80 L960 150 L1000 95 L1040 150 L1100 70 L1160 150 L1200 100 L1240 150 L1300 75 L1360 150 L1400 105 L1440 150 V260 Z"/>
       <!-- mid row -->
-      <path fill="#1d4d3f" d="M0 260 V190 L50 120 L100 190 L150 110 L200 190 L260 130 L310 190 L370 100 L430 190 L480 135 L530 190 L590 115 L650 190 L700 140 L750 190 L820 105 L890 190 L940 130 L990 190 L1050 115 L1110 190 L1160 135 L1210 190 L1280 110 L1350 190 L1400 130 L1440 190 V260 Z"/>
+      <path fill="var(--pine)" d="M0 260 V190 L50 120 L100 190 L150 110 L200 190 L260 130 L310 190 L370 100 L430 190 L480 135 L530 190 L590 115 L650 190 L700 140 L750 190 L820 105 L890 190 L940 130 L990 190 L1050 115 L1110 190 L1160 135 L1210 190 L1280 110 L1350 190 L1400 130 L1440 190 V260 Z"/>
       <!-- front row -->
-      <path fill="#0b1d2e" d="M0 260 V225 L30 175 L60 225 L110 160 L160 225 L200 185 L240 225 L300 155 L360 225 L400 190 L440 225 L510 165 L580 225 L620 185 L660 225 L730 160 L800 225 L840 190 L880 225 L950 165 L1020 225 L1060 185 L1100 225 L1170 160 L1240 225 L1280 190 L1320 225 L1390 170 L1440 225 V260 Z"/>
+      <path fill="var(--night)" d="M0 260 V225 L30 175 L60 225 L110 160 L160 225 L200 185 L240 225 L300 155 L360 225 L400 190 L440 225 L510 165 L580 225 L620 185 L660 225 L730 160 L800 225 L840 190 L880 225 L950 165 L1020 225 L1060 185 L1100 225 L1170 160 L1240 225 L1280 190 L1320 225 L1390 170 L1440 225 V260 Z"/>
     </svg>
   </div>
 
